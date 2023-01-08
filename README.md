@@ -23,12 +23,6 @@ And then the code:
 ```rust,norun
 use lnbits_rust::{api::invoice::CreateInvoiceParams, LNBitsClient};
 
-_wallet_id: String,
-        admin_key: String,
-        invoice_read_key: String,
-        lnbits_url: String,
-        tor_socket: Option<String>,
-
 #[tokio::main]
 async fn main() {
     let client = LNBitsClient::new(
