@@ -3,7 +3,7 @@
 [![crates.io](https://img.shields.io/crates/v/lnbits_rust.svg)](https://crates.io/crates/lnbits_rust)
 [![Documentation](https://docs.rs/lnbits_rust/badge.svg)](https://docs.rs/lnbits_rust)
 [![MIT/Apache-2 licensed](https://img.shields.io/crates/l/lnbits_rust.svg)](./LICENSE.txt)
-[![CI](https://github.com/0xtlt/lnbits_rust/actions/workflows/ci.yml/badge.svg)](https://github.com/0xtlt/lnbits_rust/actions/workflows/ci.yml)
+[![CI](https://github.com/0xtlt/lnbits_rust/actions/workflows/check.yml/badge.svg)](https://github.com/0xtlt/lnbits_rust/actions/workflows/check.yml)
 [![Issues](https://img.shields.io/github/issues/0xtlt/lnbits_rust)](https://img.shields.io/github/issues/0xtlt/lnbits_rust)
 
 An ergonomic, [LNBits](https://lnbits.com/) API Client for Rust.
