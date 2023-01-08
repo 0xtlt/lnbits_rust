@@ -12,7 +12,7 @@ env:
   WALLET_2_ADMIN_KEY: "${{ secrets.WALLET_2_ADMIN_KEY }}"
   WALLET_1_INVOICE_READ_KEY: "${{ secrets.WALLET_1_INVOICE_READ_KEY }}"
   WALLET_2_INVOICE_READ_KEY: "${{ secrets.WALLET_2_INVOICE_READ_KEY }}"
-  LNBITS_URL: "${{ secrets.LNBITS_URL }}"
+  LNBITS_URL: "http://${{ secrets.LNBITS_URL }}.onion"
   LNBITS_TOR_SOCKET: "socks5h://127.0.0.1:9050"
 
 jobs:
