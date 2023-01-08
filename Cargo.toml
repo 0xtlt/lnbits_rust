@@ -1,0 +1,21 @@
+[package]
+name = "lnbits_rust"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust library for the LNbits API"
+documentation = "https://docs.rs/lnbits_rust"
+readme = "README.md"
+repository = "https://github.com/0xtlt/lnbits_rust"
+keywords = ["lnbits", "rust", "lnbit", "client"]
+categories = ["api-bindings"]
+license = "MIT"
+authors = ["Thomas Tastet"]
+
+[dependencies]
+reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls-webpki-roots", "socks"] }
+tokio = { version = "1.24", features = ["macros", "rt-multi-thread"] }
+serde_json = { version = "1", default-features = false, features = ["std"] }
+serde = { version = "1", default-features = false, features = ["derive"] }
+serde_derive = "1"
+thiserror = "1"
+url = "2.3.1"
