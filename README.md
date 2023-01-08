@@ -67,7 +67,7 @@ async fn main() {
         client.decode_invoice(&i.payment_request).await.unwrap()
     );
 
-    while !client.check_invoice(&i.payment_hash).await.unwrap() {
+    while !client.is_invoice_paid(&i.payment_hash).await.unwrap() {
         println!("Waiting for payment");
         tokio::time::sleep(tokio::time::Duration::from_secs(1)).await;
     }
