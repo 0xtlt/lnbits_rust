@@ -1,6 +1,6 @@
 [package]
 name = "lnbits_rust"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "A Rust library for the LNbits API"
 documentation = "https://docs.rs/lnbits_rust"
@@ -18,5 +18,5 @@ serde_json = { version = "1", default-features = false, features = ["std"] }
 serde = { version = "1", default-features = false, features = ["derive"] }
 serde_derive = "1"
 thiserror = "1"
-url = "2.3.1"
-tokio-test = "0.4.2"
+url = "2.3"
+tokio-test = "0.4"
