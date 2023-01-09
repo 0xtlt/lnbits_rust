@@ -1,5 +1,3 @@
-// env!("PUBLIC_KEY").to_string()
-
 pub mod api;
 
 use reqwest::Url;
