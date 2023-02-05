@@ -16,6 +16,7 @@ pub struct CreateInvoiceParams {
     pub amount: i64,
     pub unit: String,
     pub memo: Option<String>,
+    pub expiry: Option<i64>,
     pub webhook: Option<String>,
     pub internal: Option<bool>,
 }
@@ -54,6 +55,7 @@ impl crate::LNBitsClient {
     ///     let params = CreateInvoiceParams {
     ///        amount: 1,
     ///        unit: "sat".to_string(),
+    ///        expiry: None,
     ///        memo: None,
     ///        webhook: None,
     ///        internal: None,
@@ -78,6 +80,7 @@ impl crate::LNBitsClient {
             "memo": params.memo,
             "webhook": params.webhook,
             "internal": params.internal,
+            "expiry": params.expiry,
         });
 
         let body = self
@@ -184,7 +187,7 @@ impl crate::LNBitsClient {
     pub async fn is_invoice_paid(&self, payment_hash: &str) -> Result<bool, crate::LNBitsError> {
         let body = self
             .make_get(
-                &format!("api/v1/payments/{}", payment_hash),
+                &format!("api/v1/payments/{payment_hash}"),
                 crate::api::LNBitsRequestKey::Admin,
             )
             .await?;

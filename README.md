@@ -54,6 +54,7 @@ async fn main() {
             amount: 1,
             unit: "sat".to_string(),
             memo: None,
+            expiry: Some(10000),
             webhook: None,
             internal: None,
         })
