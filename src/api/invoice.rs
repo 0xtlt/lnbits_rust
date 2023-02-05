@@ -123,6 +123,7 @@ impl crate::LNBitsClient {
     ///       amount: 1,
     ///       unit: "sat".to_string(),
     ///       memo: None,
+    ///       expiry: None,
     ///       webhook: None,
     ///       internal: None,
     ///    };
