@@ -2,6 +2,7 @@ pub mod api;
 
 use reqwest::Url;
 
+#[derive(Clone)]
 /// The LNBitsClient struct
 pub struct LNBitsClient {
     // wallet_id: String, // Can be used later
