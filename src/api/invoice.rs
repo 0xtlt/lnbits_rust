@@ -16,6 +16,7 @@ pub struct CreateInvoiceParams {
     pub amount: i64,
     pub unit: String,
     pub memo: Option<String>,
+    /// expiry is in seconds
     pub expiry: Option<i64>,
     pub webhook: Option<String>,
     pub internal: Option<bool>,
